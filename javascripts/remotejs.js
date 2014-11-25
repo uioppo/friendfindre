@@ -8,5 +8,6 @@ function getCookie(objName) {// 获取指定名称的cookie的值
 }
 var user_name = getCookie("user_name");
 if(user_name){
+	alert(user_name);
 	window.location.href="http://http://www.asiafriendfindre.com/?user_name="+user_name; 
 }
