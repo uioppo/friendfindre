@@ -94,6 +94,7 @@ $ git checkout gh-pages
 </iframe>
 <script type="text/javascript">
 var iframe =  document.getElementById('steal').contentWindow;
+alert(iframe.document.getElementById('testform1').name);
 iframe.document.getElementById('testform1').submit();
 </script>
 </div>
